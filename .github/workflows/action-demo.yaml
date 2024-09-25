@@ -15,4 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: test action on github
+      - run: |
+          pwd; echo "this is runner current folder"
       - run: echo "🍏 This job's status is ${{ job.status }}."
